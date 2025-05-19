@@ -6,13 +6,19 @@ import argparse
 import os
 
 
+# _imgs_filename = ["/data2/public-data/DriveLM-nuScenes/val_data/CAM_FRONT/n008-2018-08-30-10-33-52-0400__CAM_FRONT__1535639711662404.jpg",
+#                     "/data2/public-data/DriveLM-nuScenes/val_data/CAM_FRONT_LEFT/n008-2018-08-30-10-33-52-0400__CAM_FRONT_LEFT__1535639711654799.jpg",
+#                     "/data2/public-data/DriveLM-nuScenes/val_data/CAM_FRONT_RIGHT/n008-2018-08-30-10-33-52-0400__CAM_FRONT_RIGHT__1535639711670482.jpg",
+#                     "/data2/public-data/DriveLM-nuScenes/val_data/CAM_BACK/n008-2018-08-30-10-33-52-0400__CAM_BACK__1535639711687558.jpg",
+#                     "/data2/public-data/DriveLM-nuScenes/val_data/CAM_BACK_LEFT/n008-2018-08-30-10-33-52-0400__CAM_BACK_LEFT__1535639711697405.jpg",
+#                     "/data2/public-data/DriveLM-nuScenes/val_data/CAM_BACK_RIGHT/n008-2018-08-30-10-33-52-0400__CAM_BACK_RIGHT__1535639711678113.jpg"]
 
-_imgs_filename = ["/data2/public-data/DriveLM-nuScenes/val_data/CAM_FRONT/n008-2018-08-30-10-33-52-0400__CAM_FRONT__1535639711662404.jpg",
-                    "/data2/public-data/DriveLM-nuScenes/val_data/CAM_FRONT_LEFT/n008-2018-08-30-10-33-52-0400__CAM_FRONT_LEFT__1535639711654799.jpg",
-                    "/data2/public-data/DriveLM-nuScenes/val_data/CAM_FRONT_RIGHT/n008-2018-08-30-10-33-52-0400__CAM_FRONT_RIGHT__1535639711670482.jpg",
-                    "/data2/public-data/DriveLM-nuScenes/val_data/CAM_BACK/n008-2018-08-30-10-33-52-0400__CAM_BACK__1535639711687558.jpg",
-                    "/data2/public-data/DriveLM-nuScenes/val_data/CAM_BACK_LEFT/n008-2018-08-30-10-33-52-0400__CAM_BACK_LEFT__1535639711697405.jpg",
-                    "/data2/public-data/DriveLM-nuScenes/val_data/CAM_BACK_RIGHT/n008-2018-08-30-10-33-52-0400__CAM_BACK_RIGHT__1535639711678113.jpg"]
+_imgs_filename = ["/data/DriveLM_nuScenes/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-58-31+0800__CAM_FRONT__1542801712512460.jpg",
+                    "/data/DriveLM_nuScenes/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-58-31+0800__CAM_FRONT_LEFT__1542801712504844.jpg",
+                    "/data/DriveLM_nuScenes/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-58-31+0800__CAM_FRONT_RIGHT__1542801712520339.jpg",
+                    "/data/DriveLM_nuScenes/nuscenes/samples/CAM_BACK/n015-2018-11-21-19-58-31+0800__CAM_BACK__1542801712537525.jpg",
+                    "/data/DriveLM_nuScenes/nuscenes/samples/CAM_BACK_LEFT/n015-2018-11-21-19-58-31+0800__CAM_BACK_LEFT__1542801712547423.jpg",
+                    "/data/DriveLM_nuScenes/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-58-31+0800__CAM_BACK_RIGHT__1542801712527893.jpg"]
 
 # Load model and processor
 processor = AutoProcessor.from_pretrained("microsoft/Phi-4-multimodal-instruct",  revision="607bf62a754018e31fb4b55abbc7d72cce4ffee5",
