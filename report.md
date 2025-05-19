@@ -6,4 +6,4 @@
 
 实际效果在和原始模型保持一致的情况下达到了接近量化后模型的效率(之前2.1s/task到现在1.01s/task)
 
-具体实现见src/reference.py
+具体实现见src/inference.py
